@@ -293,11 +293,34 @@ div.carousel div.img {
     border-radius: 10px;
 }
 
+.trainPositives {
+    list-style: none;
 
+}
 
+.trainPositives ion-icon {
+    font-size: 25px;
+}
 
+.trainPositives-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
 
+.trainPositivesPoint:hover .trainPositives-description {
+    opacity: 1;
+    max-height: fit-content;
+    transition: all 1s;
+}
 
+.trainPositives-description {
+    padding-left: 35px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    opacity: 0;
+    max-height: 0;
+}
 
 
 
