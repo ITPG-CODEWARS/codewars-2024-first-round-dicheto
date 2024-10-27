@@ -374,6 +374,10 @@ nav a:hover li {
     }
 }
 
+.border-customized {
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+}
 
 
 
