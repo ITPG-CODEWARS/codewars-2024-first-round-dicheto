@@ -322,7 +322,17 @@ div.carousel div.img {
     max-height: 0;
 }
 
+footer {
+    height: 20vh;
+}
 
+footer * {
+    max-height: 100%;
+}
+
+footer img {
+    max-width: 100%;
+}
 
 
 
