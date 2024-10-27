@@ -210,16 +210,55 @@ div.carousel:hover {
     font-size: 30px;
 }
 
+.trainOne div.img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/Shinkansen.png);
+}
 
+.trainTwo div.img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TGVDuplex.png);
+}
 
+.trainThree div.img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/ICEFour.png);
+}
 
+.trainFour div.img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainFour.jpg);
+}
 
+.trainFive div.img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainFive.jpg);
+}
 
+.trainSix div.img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainSix.jpg);
+}
 
+.trainSeven div.img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainSeven.jpg);
+}
 
+.trainEight div.img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainEight.jpg);
+}
 
+.trainNine div.img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainNine.jpg);
+}
 
+div.carousel div.img {
+    background-size: 100% 100%;
+    object-fit: cover;
+}
 
+.section-SeeMore a {
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    animation: colorRotateForButtonBackground 3s linear 0s infinite;
+}
 
 
 
