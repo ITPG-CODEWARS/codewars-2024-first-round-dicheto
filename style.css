@@ -343,6 +343,10 @@ nav a:hover li {
     opacity: 1;
 }
 
+.btn-footer {
+    animation: colorRotateForFooter 2s linear 0s infinite;
+}
+
 
 
 
