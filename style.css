@@ -379,6 +379,10 @@ nav a:hover li {
     border: 1px solid #dee2e6;
 }
 
+.train-bgFix {
+    background-size: cover !important;
+    background-position-y: center;
+}
 
 
 
