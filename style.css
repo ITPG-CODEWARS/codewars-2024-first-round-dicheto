@@ -282,6 +282,16 @@ div.carousel div.img {
     }
 }
 
+.btn-tag {
+    width: auto;
+    height: auto;
+    padding: 5px 7px;
+    border: 2px solid #4c3663;
+    background-color: white;
+    color: #4c3663;
+    font-size: 14px;
+    border-radius: 10px;
+}
 
 
 
