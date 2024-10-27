@@ -52,11 +52,13 @@
 .socialButtons p {
     text-align: end;
 }
-header a {
 
+header a,
+a {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
+}
 
 
 
