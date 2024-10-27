@@ -384,20 +384,90 @@ nav a:hover li {
     background-position-y: center;
 }
 
+.lg-bg-drive-type {
+    background: linear-gradient(135deg, #0A2A36, #56C1D0);
+    color: #fff;
+    border: none;
+}
 
+.lg-bg-power {
+    background: linear-gradient(135deg, #4B0039, #FF6B9A);
+    color: #fff;
+    border: none;
+}
 
+.lg-bg-max-speed {
+    background: linear-gradient(135deg, #1E4057, #5ED1FF);
+    color: #fff;
+    border: none;
+}
 
+.lg-bg-length {
+    background: linear-gradient(135deg, #2B3D34, #6CFFA3);
+    color: #fff;
+    border: none;
 
+}
 
+.lg-bg-track-width {
+    background: linear-gradient(135deg, #1B4C47, #77E6D4);
+    color: #fff;
+    border: none;
+}
 
+.lg-bg-car-count {
+    background: linear-gradient(135deg, #3C1A4F, #A275FF);
+    color: #fff;
+    border: none;
+}
 
+.lg-bg-weight {
+    background: linear-gradient(135deg, #263946, #5EB8A3);
+    color: #fff;
+    border: none;
+}
 
+.lg-bg-capacity {
+    background: linear-gradient(135deg, #1F3A47, #56E6C7);
+    color: #fff;
+    border: none;
+}
 
+.lg-bg-safety-systems {
+    background: linear-gradient(135deg, #293D5C, #7ACBFF);
+    color: #fff;
+    border: none;
+}
 
+.lg-bg-comfort-systems {
+    background: linear-gradient(135deg, #3E1A34, #FF73B6);
+    color: #fff;
+    border: none;
+}
 
+.lg-bg-acceleration {
+    background: linear-gradient(135deg, #0D3A42, #4FD7DF);
+    color: #fff;
+    border: none;
+}
 
+.lg-bg-braking-distance {
+    background: linear-gradient(135deg, #1F4A58, #72E1FF);
+    color: #fff;
+    border: none;
+}
 
+.lg-bg-service-frequency {
+    background: linear-gradient(135deg, #2B5145, #71FFA7);
+    color: #fff;
+    border: none;
+}
 
+.lg-bg-year-of-manufacture {
+    background: linear-gradient(135deg, #4A2E3A, #FF7399);
+    color: #fff;
+    border: none;
+}
 
 
 
