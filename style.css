@@ -347,10 +347,32 @@ nav a:hover li {
     animation: colorRotateForFooter 2s linear 0s infinite;
 }
 
+@keyframes colorRotateForFooter {
+    from {
+        border-color: #6666ff;
+        color: #6666ff;
+    }
 
+    10% {
+        border-color: #0099ff;
+        color: #0099ff;
+    }
 
+    50% {
+        border-color: #00b000;
+        color: #00b000;
+    }
 
+    75% {
+        border-color: #ff3399;
+        color: #ff3399;
+    }
 
+    100% {
+        border-color: #6666ff;
+        color: #6666ff;
+    }
+}
 
 
 
