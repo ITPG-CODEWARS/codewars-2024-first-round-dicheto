@@ -198,7 +198,17 @@ div.carousel:hover {
     font-weight: bold;
 }
 
+.btn-seeMore {
+    text-align: end;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
+.btn-seeMore ion-icon {
+    font-size: 30px;
+}
 
 
 
