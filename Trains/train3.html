@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body> 
+<body>
     <header>
         <section id="topBar">
             <p data-lang-key="topBar"></p>
@@ -20,8 +20,8 @@
         <section class="border-bottom">
             <div class="container-xl">
                 <div class="row justify-content-around">
-                    <div class="col-12 col-md-2 d-flex justify-content-center"><a href="/index.html"><img class="header-logo" src="/logo.png"
-                            alt=""></a></div>
+                    <div class="col-12 col-md-2 d-flex justify-content-center"><a href="/index.html"><img
+                                class="header-logo" src="/logo.png" alt=""></a></div>
                     <div class="col-12 col-md justify-content-around d-flex align-items-center">
 
                         <nav class="navbar justify-content-center w-100">
@@ -54,6 +54,7 @@
                                     <p><ion-icon name="mail-outline"></ion-icon></p>
                                 </a></li>
                             <li>
+                                <!-- Смяна на език -->
                                 <select id="languageSwitcher">
                                     <option value="en">English</option>
                                     <option value="bg">Български</option>
@@ -65,41 +66,46 @@
             </div>
         </section>
     </header>
-<section>
+    <section>
         <div class="container" id="product">
             <div class="row my-5">
                 <div class="col-12 col-md-7">
-                    
+
+                    <!-- Карусел за смяна на снимките -->
                     <div class="carousel">
                         <div class="carousel-slides">
-                          <div class="slide active"><img src="/Assets/Images/ICE4/1.jpg" alt="Image 1"></div>
-                          <div class="slide"><img src="/Assets/Images/ICE4/2.jpg" alt="Image 2"></div>
-                          <div class="slide"><img src="/Assets/Images/ICE4/3.jpg" alt="Image 3"></div>
-                          <div class="slide"><img src="/Assets/Images/ICE4/4.jpg" alt="Image 4"></div>
+                            <div class="slide active"><img src="/Assets/Images/ICE4/1.jpg" alt="Image 1"></div>
+                            <div class="slide"><img src="/Assets/Images/ICE4/2.jpg" alt="Image 2"></div>
+                            <div class="slide"><img src="/Assets/Images/ICE4/3.jpg" alt="Image 3"></div>
+                            <div class="slide"><img src="/Assets/Images/ICE4/4.jpg" alt="Image 4"></div>
                         </div>
+                        <!-- Точки за карусел за смяна на снимките -->
                         <div class="carousel-dots">
-                          <span class="dot active" onclick="showSlide(0)"></span>
-                          <span class="dot" onclick="showSlide(1)"></span>
-                          <span class="dot" onclick="showSlide(2)"></span>
-                          <span class="dot" onclick="showSlide(3)"></span>
+                            <span class="dot active" onclick="showSlide(0)"></span>
+                            <span class="dot" onclick="showSlide(1)"></span>
+                            <span class="dot" onclick="showSlide(2)"></span>
+                            <span class="dot" onclick="showSlide(3)"></span>
                         </div>
-                      </div>
-                      
+                    </div>
+
                 </div>
 
-                <div class="col-12 col-md-5" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true" >
+                <div class="col-12 col-md-5" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
                     <div class="p-3 product_sidebar-border">
+                        <!-- Основна информация за влак -->
                         <h1 class="product_title mb-0"><span data-lang-key="train"></span>ICE 4</h1>
                         <span class="product_brand">Siemens - &#8203;<span data-lang-key="Germany"></span>&#8203;
                         </span>
                         <p class="product_mini-description mt-3" data-lang-key="ICEFour_shortDescriptioon">
-                            
+
                         </p>
+                        <!-- Технически спецификации -->
                         <div class="row gap-2">
                             <div class="col pe-0">
                                 <div class="card lg-bg-max-speed">
                                     <div class="card-statistic-3 p-4">
                                         <div class="mb-4">
+                                            <!-- Максимална скорост -->
                                             <h5 class="card-title mb-0" data-lang-key="maxSpeed"></h5>
                                         </div>
                                         <div class="row align-items-center mb-2 d-flex">
@@ -110,7 +116,7 @@
                                             </div>
                                         </div>
                                         <div class="progress mt-1" style="height: 8px;">
-                                            <div class="progress-bar trainSpeed" role="progressbar" >
+                                            <div class="progress-bar trainSpeed" role="progressbar">
                                             </div>
                                         </div>
                                     </div>
@@ -120,6 +126,7 @@
                                 <div class="card lg-bg-power">
                                     <div class="card-statistic-3 p-4">
                                         <div class="mb-4">
+                                            <!-- Ускорение -->
                                             <h5 class="card-title mb-0" data-lang-key="acceleration"></h5>
                                         </div>
                                         <div class="row align-items-center mb-2 d-flex">
@@ -130,7 +137,7 @@
                                             </div>
                                         </div>
                                         <div class="progress mt-1" style="height: 8px;">
-                                            <div class="progress-bar trainSpeed" role="progressbar" >
+                                            <div class="progress-bar trainSpeed" role="progressbar">
                                             </div>
                                         </div>
                                     </div>
@@ -140,6 +147,7 @@
                                 <div class="card lg-bg-drive-type">
                                     <div class="card-statistic-3 p-4">
                                         <div class="mb-4">
+                                            <!-- Задвижване-->
                                             <h5 class="card-title mb-0" data-lang-key="driveType"></h5>
                                         </div>
                                         <div class="row align-items-center mb-2 d-flex">
@@ -157,13 +165,16 @@
 
                 </div>
             </div>
+            <!-- Бутони за данни-->
             <div class="d-lg-flex d-block justify-content-center btn-productSpecifications">
-                <h3 class="text-center my-3 mx-2 border-bottom"><a href="#technicalSpecifiactions" data-lang-key="technicalSpecifications"></a></h3>
-            <h3 class="text-center my-3 mx-2 border-bottom"><a href="#comfort" data-lang-key="Comfort"></a></h3>
-            <h3 class="text-center my-3 mx-2 border-bottom"><a href="#safety" data-lang-key="Safety"></a></h3>
+                <h3 class="text-center my-3 mx-2 border-bottom"><a href="#technicalSpecifiactions"
+                        data-lang-key="technicalSpecifications"></a></h3>
+                <h3 class="text-center my-3 mx-2 border-bottom"><a href="#comfort" data-lang-key="Comfort"></a></h3>
+                <h3 class="text-center my-3 mx-2 border-bottom"><a href="#safety" data-lang-key="Safety"></a></h3>
             </div>
-            
-            <div class="border-customized py-3 px-4" id="technicalSpecifiactions" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" >
+
+            <div class="border-customized py-3 px-4" id="technicalSpecifiactions" data-aos="fade-up"
+                data-aos-duration="1000" data-aos-once="true">
                 <h2 class="text-center"><span data-lang-key="technicalSpecifications"></span></h2>
                 <div class="row my-3 gap-2">
                     <div class="col">
@@ -171,16 +182,18 @@
                             <div class="card lg-bg-drive-type">
                                 <div class="card-statistic-3 p-4">
                                     <div class="mb-4 nowrap">
+                                        <!-- Задвижване-->
                                         <h5 class="card-title mb-0" data-lang-key="driveType"></h5>
                                     </div>
                                     <div class="row align-items-center mb-2 d-flex">
                                         <div class="col nowrap">
                                             <h2 class="d-flex align-items-center mb-0">
-                                                <span data-lang-key="electricity_changing"></span>                                            </h2>
+                                                <span data-lang-key="electricity_changing"></span>
+                                            </h2>
                                         </div>
                                     </div>
                                     <div class="progress mt-1" style="height: 8px;">
-                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                        <div class="progress-bar trainSpeed" role="progressbar"></div>
                                     </div>
                                 </div>
                             </div>
@@ -191,6 +204,7 @@
                             <div class="card lg-bg-power">
                                 <div class="card-statistic-3 p-4">
                                     <div class="mb-4 nowrap">
+                                        <!-- Ускорение -->
                                         <h5 class="card-title mb-0" data-lang-key="acceleration"></h5>
                                     </div>
                                     <div class="row align-items-center mb-2 d-flex">
@@ -201,7 +215,7 @@
                                         </div>
                                     </div>
                                     <div class="progress mt-1" style="height: 8px;">
-                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                        <div class="progress-bar trainSpeed" role="progressbar"></div>
                                     </div>
                                 </div>
                             </div>
@@ -212,6 +226,7 @@
                             <div class="card lg-bg-max-speed">
                                 <div class="card-statistic-3 p-4">
                                     <div class="mb-4 nowrap">
+                                        <!-- Максимална скорост -->
                                         <h5 class="card-title mb-0" data-lang-key="maxSpeed"></h5>
                                     </div>
                                     <div class="row align-items-center mb-2 d-flex">
@@ -222,7 +237,7 @@
                                         </div>
                                     </div>
                                     <div class="progress mt-1" style="height: 8px;">
-                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                        <div class="progress-bar trainSpeed" role="progressbar"></div>
                                     </div>
                                 </div>
                             </div>
@@ -233,6 +248,7 @@
                             <div class="card lg-bg-length">
                                 <div class="card-statistic-3 p-4">
                                     <div class="mb-4 nowrap">
+                                        <!-- Дължина -->
                                         <h5 class="card-title mb-0" data-lang-key="length"></h5>
                                     </div>
                                     <div class="row align-items-center mb-2 d-flex">
@@ -243,7 +259,7 @@
                                         </div>
                                     </div>
                                     <div class="progress mt-1" style="height: 8px;">
-                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                        <div class="progress-bar trainSpeed" role="progressbar"></div>
                                     </div>
                                 </div>
                             </div>
@@ -256,6 +272,7 @@
                             <div class="card lg-bg-track-width">
                                 <div class="card-statistic-3 p-4">
                                     <div class="mb-4 nowrap">
+                                        <!-- Коловоз -->
                                         <h5 class="card-title mb-0" data-lang-key="trackwidth"></h5>
                                     </div>
                                     <div class="row align-items-center mb-2 d-flex">
@@ -266,7 +283,7 @@
                                         </div>
                                     </div>
                                     <div class="progress mt-1" style="height: 8px;">
-                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                        <div class="progress-bar trainSpeed" role="progressbar"></div>
                                     </div>
                                 </div>
                             </div>
@@ -277,6 +294,7 @@
                             <div class="card lg-bg-car-count">
                                 <div class="card-statistic-3 p-4">
                                     <div class="mb-4 nowrap">
+                                        <!-- Вагони(бр)-->
                                         <h5 class="card-title mb-0" data-lang-key="carCount"></h5>
                                     </div>
                                     <div class="row align-items-center mb-2 d-flex">
@@ -287,7 +305,7 @@
                                         </div>
                                     </div>
                                     <div class="progress mt-1" style="height: 8px;">
-                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                        <div class="progress-bar trainSpeed" role="progressbar"></div>
                                     </div>
                                 </div>
                             </div>
@@ -298,6 +316,7 @@
                             <div class="card lg-bg-weight">
                                 <div class="card-statistic-3 p-4">
                                     <div class="mb-4 nowrap">
+                                        <!-- Тегло -->
                                         <h5 class="card-title mb-0" data-lang-key="weight"></h5>
                                     </div>
                                     <div class="row align-items-center mb-2 d-flex">
@@ -308,7 +327,7 @@
                                         </div>
                                     </div>
                                     <div class="progress mt-1" style="height: 8px;">
-                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                        <div class="progress-bar trainSpeed" role="progressbar"></div>
                                     </div>
                                 </div>
                             </div>
@@ -319,6 +338,7 @@
                             <div class="card lg-bg-capacity">
                                 <div class="card-statistic-3 p-4">
                                     <div class="mb-4 nowrap">
+                                        <!-- Капацитет -->
                                         <h5 class="card-title mb-0" data-lang-key="capacity"></h5>
                                     </div>
                                     <div class="row align-items-center mb-2 d-flex">
@@ -329,7 +349,7 @@
                                         </div>
                                     </div>
                                     <div class="progress mt-1" style="height: 8px;">
-                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                        <div class="progress-bar trainSpeed" role="progressbar"></div>
                                     </div>
                                 </div>
                             </div>
@@ -342,6 +362,7 @@
                             <div class="card lg-bg-acceleration">
                                 <div class="card-statistic-3 p-4">
                                     <div class="mb-4 nowrap">
+                                        <!-- Ускорение -->
                                         <h5 class="card-title mb-0" data-lang-key="acceleration"></h5>
                                     </div>
                                     <div class="row align-items-center mb-2 d-flex">
@@ -352,7 +373,7 @@
                                         </div>
                                     </div>
                                     <div class="progress mt-1" style="height: 8px;">
-                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                        <div class="progress-bar trainSpeed" role="progressbar"></div>
                                     </div>
                                 </div>
                             </div>
@@ -363,16 +384,19 @@
                             <div class="card lg-bg-braking-distance">
                                 <div class="card-statistic-3 p-4">
                                     <div class="mb-4 nowrap">
+                                        <!-- Спирачен път -->
                                         <h5 class="card-title mb-0" data-lang-key="brakingDistance"></h5>
                                     </div>
                                     <div class="row align-items-center mb-2 d-flex">
                                         <div class="col nowrap">
                                             <h2 class="d-flex align-items-center mb-0">
-                                                2.2 &#8203;<span data-lang-key="km"></span>&#8203; &#8203;<span data-lang-key="from"></span>&#8203; 320 &#8203;<span data-lang-key="kmH"></span>                                            </h2>
+                                                2.2 &#8203;<span data-lang-key="km"></span>&#8203; &#8203;<span
+                                                    data-lang-key="from"></span>&#8203; 320 &#8203;<span
+                                                    data-lang-key="kmH"></span> </h2>
                                         </div>
                                     </div>
                                     <div class="progress mt-1" style="height: 8px;">
-                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                        <div class="progress-bar trainSpeed" role="progressbar"></div>
                                     </div>
                                 </div>
                             </div>
@@ -383,6 +407,7 @@
                             <div class="card lg-bg-service-frequency">
                                 <div class="card-statistic-3 p-4">
                                     <div class="mb-4 nowrap">
+                                        <!-- Обслужване -->
                                         <h5 class="card-title mb-0" data-lang-key="serviceFrequency"></h5>
                                     </div>
                                     <div class="row align-items-center mb-2 d-flex">
@@ -393,7 +418,7 @@
                                         </div>
                                     </div>
                                     <div class="progress mt-1" style="height: 8px;">
-                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                        <div class="progress-bar trainSpeed" role="progressbar"></div>
                                     </div>
                                 </div>
                             </div>
@@ -404,6 +429,7 @@
                             <div class="card lg-bg-year-of-manufacture">
                                 <div class="card-statistic-3 p-4">
                                     <div class="mb-4 nowrap">
+                                        <!-- Година на производство -->
                                         <h5 class="card-title mb-0" data-lang-key="yearOfManufacture"></h5>
                                     </div>
                                     <div class="row align-items-center mb-2 d-flex">
@@ -414,7 +440,7 @@
                                         </div>
                                     </div>
                                     <div class="progress mt-1" style="height: 8px;">
-                                        <div class="progress-bar trainSpeed" role="progressbar" ></div>
+                                        <div class="progress-bar trainSpeed" role="progressbar"></div>
                                     </div>
                                 </div>
                             </div>
@@ -422,7 +448,8 @@
                     </div>
                 </div>
             </div>
-            <div class="border-customized my-2 py-3 px-4" id="comfort" >
+            <!-- ЗОНА комфорт -->
+            <div class="border-customized my-2 py-3 px-4" id="comfort" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                 <h2 class="text-center"><span data-lang-key="ComfortLong"></span></h2>
                 <ul>
                     <li data-lang-key="wireless_Internet"></li>
@@ -430,55 +457,57 @@
                     <li data-lang-key="quiet_Wagons"></li>
                 </ul>
             </div>
-            <div class="border-customized my-2 py-3 px-4" id="safety" >
+            <!-- ЗОНА безопасност -->
+            <div class="border-customized my-2 py-3 px-4" id="safety" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                 <h2 class="text-center"><span data-lang-key="SafetyLong"></span></h2>
                 <ul>
                     <li data-lang-key="train_ControlSystem"></li>
                     <li data-lang-key="collision_PreventionSystem"></li>
                 </ul>
-                
+
             </div>
 
         </div>
     </section>
-    <footer class="h-auto"> 
+    <!-- ФУТЪР -->
+    <footer class="h-auto">
         <div class="container">
-        <div class="row d-flex align-items-center">
-            <div class="col-12 col-md-2"><img src="/logo-white.png" alt=""></a></div> 
-            <div class="col d-flex text-center justify-content-center align-items-center">
-                <p>Построени с БЪЛГАРСКА любов и ръка 🤍💚❤️</p>
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-md-2"><img src="/logo-white.png" alt=""></a></div>
+                <div class="col d-flex text-center justify-content-center align-items-center">
+                    <p>Построени с БЪЛГАРСКА любов и ръка 🤍💚❤️</p>
+                </div>
+                <div class="col d-flex justify-content-end align-items-center">
+
+
+                    <nav class="navbar justify-content-end w-100">
+                        <ul>
+                            <a href="/index.html">
+                                <li>Начало </li>
+                                <p><ion-icon name="home-outline"></ion-icon></p>
+                            </a>
+                            <a href="/trains.html">
+                                <li>Влакове </li>
+                                <p><ion-icon name="train-outline"></ion-icon></p>
+                            </a>
+                            <a href="/AboutUs.html">
+                                <li>За нас </li>
+                                <p><ion-icon name="information-outline"></ion-icon></p>
+                            </a>
+                            <a href="/Contacts.html">
+                                <li>Контакти </li>
+                                <p><ion-icon name="send-outline"></ion-icon></p>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="col d-flex justify-content-end align-items-center"> 
-                
-                
-                <nav class="navbar justify-content-end w-100"> 
-                    <ul>
-                        <a href="/index.html">
-                            <li>Начало </li> 
-                            <p><ion-icon name="home-outline"></ion-icon></p> 
-                        </a>
-                        <a href="/trains.html">
-                            <li>Влакове </li> 
-                            <p><ion-icon name="train-outline"></ion-icon></p> 
-                        </a>
-                        <a href="/AboutUs.html">
-                            <li>За нас </li> 
-                            <p><ion-icon name="information-outline"></ion-icon></p> 
-                        </a>
-                        <a href="/Contacts.html">
-                            <li>Контакти </li> 
-                            <p><ion-icon name="send-outline"></ion-icon></p> 
-                        </a>
-                    </ul>
-                </nav>
+            <div class="d-flex justify-content-center">
+                <button class="text-center mb-2 btn-tag btn-footer bg-none">
+                    Всички права запазени 2024
+                </button>
             </div>
         </div>
-        <div class="d-flex justify-content-center"> 
-            <button class="text-center mb-2 btn-tag btn-footer bg-none">
-                Всички права запазени 2024 
-            </button>
-        </div>
-    </div>
 
     </footer>
 
@@ -495,4 +524,3 @@
 </body>
 
 </html>
-
