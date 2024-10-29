@@ -9,50 +9,39 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css"> <!-- Връзка към основния CSS файл -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- Връзка към AOS CSS -->
     <style>
         @media (max-width: 610px) {
-
             /* Стилове за екрани с ширина до 610px */
             .index_sectionOne {
-                padding: 0;
-                /* Нулира отстъпите */
-                width: 100%;
-                /* Задава ширина 100% */
-                justify-content: center;
-                /* Центрира съдържанието */
+                padding: 0; /* Нулира отстъпите */
+                width: 100%; /* Задава ширина 100% */
+                justify-content: center; /* Центрира съдържанието */
             }
 
             .btn-hp-sectionOne {
-                width: 100%;
-                /* Задава ширина 100% на бутона */
+                width: 100%; /* Задава ширина 100% на бутона */
             }
 
             .header-logo {
-                max-width: 100%;
-                /* Ограничаване на максималната ширина на логото */
+                max-width: 100%; /* Ограничаване на максималната ширина на логото */
             }
         }
 
         @media (max-width: 498px) {
-
             /* Стилове за екрани с ширина до 498px */
             .navbar li {
-                max-width: 0;
-                /* Нулира максималната ширина на елементите в навигацията */
-                max-height: 0;
-                /* Нулира максималната височина на елементите в навигацията */
+                max-width: 0; /* Нулира максималната ширина на елементите в навигацията */
+                max-height: 0; /* Нулира максималната височина на елементите в навигацията */
             }
 
             nav a:hover li {
-                opacity: 0;
-                /* Скрива елементите при задържане на мишката */
+                opacity: 0; /* Скрива елементите при задържане на мишката */
             }
 
             nav a {
-                margin: 10px 20px;
-                /* Задава отстъпи на линковете в навигацията */
+                margin: 10px 20px; /* Задава отстъпи на линковете в навигацията */
             }
         }
     </style>
@@ -61,32 +50,31 @@
 <body>
     <header>
         <section id="topBar">
-            <p data-lang-key="topBar"></p>
-
+            <p data-lang-key="topBar"></p> <!-- Текст за горната лента -->
         </section>
         <section class="border-bottom">
             <div class="container-xl">
                 <div class="row justify-content-around">
-                    <div class="col-12 col-md-2 d-flex justify-content-center"><a href="/index.html"><img class="header-logo" src="/logo.png"
-                            alt=""></a></div>
+                    <div class="col-12 col-md-2 d-flex justify-content-center">
+                        <a href="/index.html"><img class="header-logo" src="/logo.png" alt=""></a> <!-- Лого на сайта -->
+                    </div>
                     <div class="col-12 col-md justify-content-around d-flex align-items-center">
-
                         <nav class="navbar justify-content-center w-100">
                             <ul>
                                 <a href="/index.html">
-                                    <li data-lang-key="home"></li>
+                                    <li data-lang-key="home"></li> <!-- Линк към началната страница -->
                                     <p><ion-icon name="home-outline"></ion-icon></p>
                                 </a>
                                 <a href="/trains.html">
-                                    <li data-lang-key="trains"></li>
+                                    <li data-lang-key="trains"></li> <!-- Линк към страницата с влакове -->
                                     <p><ion-icon name="train-outline"></ion-icon></p>
                                 </a>
                                 <a href="/AboutUs.html">
-                                    <li data-lang-key="aboutUS"></li>
+                                    <li data-lang-key="aboutUS"></li> <!-- Линк към страницата "За нас" -->
                                     <p><ion-icon name="information-outline"></ion-icon></p>
                                 </a>
                                 <a href="/Contacts.html">
-                                    <li data-lang-key="contacts"></li>
+                                    <li data-lang-key="contacts"></li> <!-- Линк към страницата с контакти -->
                                     <p><ion-icon name="send-outline"></ion-icon></p>
                                 </a>
                             </ul>
@@ -95,13 +83,13 @@
                     <div class="col-12 col-md-2 d-flex justify-content-center">
                         <ul class="h-100 align-items-center socialButtons">
                             <li><a href="tel://0000000000">
-                                    <p><ion-icon name="call-outline"></ion-icon></p>
+                                    <p><ion-icon name="call-outline"></ion-icon></p> <!-- Икона за телефон -->
                                 </a></li>
                             <li><a href="mailto://example@example.com">
-                                    <p><ion-icon name="mail-outline"></ion-icon></p>
+                                    <p><ion-icon name="mail-outline"></ion-icon></p> <!-- Икона за имейл -->
                                 </a></li>
                             <li>
-                                <select id="languageSwitcher">
+                                <select id="languageSwitcher"> <!-- Избор на език -->
                                     <option value="en">English</option>
                                     <option value="bg">Български</option>
                                 </select>
@@ -114,55 +102,42 @@
     </header>
     <section>
         <div class="index_sectionOne row row-fix align-items-center position-relative text-center w-100 bg">
-
-            <div style="height: 77vb;"
-                class="row btn-hp-section1 row-fix position-relative align-items-center w-auto text-center">
-
+            <div style="height: 77vb;" class="row btn-hp-section1 row-fix position-relative align-items-center w-auto text-center">
                 <span data-aos="fade-right" data-aos-duration="1000" data-aos-once="true"
                     class="text-center align-items-center h-auto pt-4 pb-4 p-auto l-button" data-lang-key="title">
-                </span>
+                </span> <!-- Заглавие с анимация -->
             </div>
         </div>
-
     </section>
     <section class="hp-bg-sectionTwo">
         <div class="container text-center mx-auto  border-customized px-2 pb-3 pt-2 my-3">
-
-            <h3 class="rainbow" data-lang-key="TheBestTrains">Най-най-яките влакове</h3>
+            <h3 class="rainbow" data-lang-key="TheBestTrains">Най-най-яките влакове</h3> <!-- Заглавие на секцията -->
             <div class="row gap-4 mx-3">
                 <div class="col">
                     <div class="carousel trainOne">
-
                         <div class="img d-flex align-items-end justify-content-center">
-
-                            <a href="/Trains/train1.html"><span class="spamLinkFix"></span></a>
-
+                            <a href="/Trains/train1.html"><span class="spamLinkFix"></span></a> <!-- Линк към първия влак -->
                             <div class="text w-100">
-                                <h3><a href="#">Shinkansen</a></h3>
+                                <h3><a href="#">Shinkansen</a></h3> <!-- Име на влака -->
                                 <p class="shortDescription" data-lang-key="Shinkansen_shortDescription"
-                                    data-lang-key="Shinkansen_shortDescription"></p>
+                                    data-lang-key="Shinkansen_shortDescription"></p> <!-- Кратко описание -->
                                 <p class="btn-seeMore align-items-center justify-content-end d-flex"><span
                                         data-lang-key="moreInfo"></span><ion-icon
-                                        name="chevron-forward-outline"></ion-icon></p>
-
+                                        name="chevron-forward-outline"></ion-icon></p> <!-- Бутон за повече информация -->
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="col">
                     <div class="carousel trainTwo">
                         <div class="img d-flex align-items-end justify-content-center">
-
-                            <a href="/Trains/train2.html"><span class="spamLinkFix"></span></a>
-
+                            <a href="/Trains/train2.html"><span class="spamLinkFix"></span></a> <!-- Линк към втория влак -->
                             <div class="text w-100">
-                                <h3><a href="#">TGV Duplex</a></h3>
-                                <p class="shortDescription" data-lang-key="TGVDuplex_shortDescriptioon"></p>
+                                <h3><a href="#">TGV Duplex</a></h3> <!-- Име на влака -->
+                                <p class="shortDescription" data-lang-key="TGVDuplex_shortDescriptioon"></p> <!-- Кратко описание -->
                                 <p class="btn-seeMore align-items-center justify-content-end d-flex"><span
                                         data-lang-key="moreInfo"></span><ion-icon
-                                        name="chevron-forward-outline"></ion-icon></p>
-
+                                        name="chevron-forward-outline"></ion-icon></p> <!-- Бутон за повече информация -->
                             </div>
                         </div>
                     </div>
@@ -170,23 +145,20 @@
                 <div class="col">
                     <div class="carousel trainThree">
                         <div class="img d-flex align-items-end justify-content-center">
-
-                            <a href="/Trains/train3.html"><span class="spamLinkFix"></span></a>
-
+                            <a href="/Trains/train3.html"><span class="spamLinkFix"></span></a> <!-- Линк към третия влак -->
                             <div class="text w-100">
-                                <h3><a href="#">ICE 4</a></h3>
-                                <p class="shortDescription" data-lang-key="ICEFour_shortDescriptioon">.</p>
+                                <h3><a href="#">ICE 4</a></h3> <!-- Име на влака -->
+                                <p class="shortDescription" data-lang-key="ICEFour_shortDescriptioon">.</p> <!-- Кратко описание -->
                                 <p class="btn-seeMore align-items-center justify-content-end d-flex"><span
                                         data-lang-key="moreInfo"></span><ion-icon
-                                        name="chevron-forward-outline"></ion-icon></p>
-
+                                        name="chevron-forward-outline"></ion-icon></p> <!-- Бутон за повече информация -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <section class="d-flex justify-content-center my-4 section-SeeMore">
-                <a href="trains.html" data-lang-key="seeMoreTrains"></a>
+                <a href="trains.html" data-lang-key="seeMoreTrains"></a> <!-- Линк за повече влакове -->
             </section>
         </div>
     </section>
@@ -195,66 +167,64 @@
         <div class="row">
             <div class="col-12 col-md-6 order-2 d-flex justify-content-center text-center">
                 <div class="my-3">
-                    <button class="btn-tag" data-lang-key="TrainsForFuture"></button>
-                    <h3 data-lang-key="trainPositives_title"></h3>
-                    <p class="text-start" data-lang-key="trainPositives_description"></p>
+                    <button class="btn-tag" data-lang-key="TrainsForFuture"></button> <!-- Бутон за влакове на бъдещето -->
+                    <h3 data-lang-key="trainPositives_title"></h3> <!-- Заглавие на положителните аспекти на влаковете -->
+                    <p class="text-start" data-lang-key="trainPositives_description"></p> <!-- Описание на положителните аспекти -->
                     <ul class="text-start trainPositives ps-2">
                         <li class="my-2 trainPositivesPoint">
                             <p class="trainPositives-title"><ion-icon name="checkmark-outline"></ion-icon><span
-                                    data-lang-key="trainPositive_First_title"></span></p>
-                            <p class="trainPositives-description" data-lang-key="trainPositive_First_description"></p>
+                                    data-lang-key="trainPositive_First_title"></span></p> <!-- Първа положителна точка -->
+                            <p class="trainPositives-description" data-lang-key="trainPositive_First_description"></p> <!-- Описание на първата положителна точка -->
                         </li>
 
                         <li class="my-2 trainPositivesPoint">
                             <p class="trainPositives-title"><ion-icon name="checkmark-outline"></ion-icon><span
-                                    data-lang-key="trainPositive_Second_title"></span></p>
-                            <p class="trainPositives-description" data-lang-key="trainPositive_Second_description"></p>
+                                    data-lang-key="trainPositive_Second_title"></span></p> <!-- Втора положителна точка -->
+                            <p class="trainPositives-description" data-lang-key="trainPositive_Second_description"></p> <!-- Описание на втората положителна точка -->
                         </li>
                         <li class="my-2 trainPositivesPoint">
                             <p class="trainPositives-title"><ion-icon name="checkmark-outline"></ion-icon><span
-                                    data-lang-key="trainPositive_Third_title"></span></p>
-                            <p class="trainPositives-description" data-lang-key="trainPositive_Third_description"></p>
+                                    data-lang-key="trainPositive_Third_title"></span></p> <!-- Трета положителна точка -->
+                            <p class="trainPositives-description" data-lang-key="trainPositive_Third_description"></p> <!-- Описание на третата положителна точка -->
                         </li>
                         <li class="my-2 trainPositivesPoint">
                             <p class="trainPositives-title"><ion-icon name="checkmark-outline"></ion-icon><span
-                                    data-lang-key="trainPositive_Fourth_title"></span></p>
-                            <p class="trainPositives-description" data-lang-key="trainPositive_Fourth_description"></p>
+                                    data-lang-key="trainPositive_Fourth_title"></span></p> <!-- Четвърта положителна точка -->
+                            <p class="trainPositives-description" data-lang-key="trainPositive_Fourth_description"></p> <!-- Описание на четвъртата положителна точка -->
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-12 col-md-6 order-1 order-md-2 d-flex justify-content-center"><img
-                    class="trainPositives-image" src="/Assets/Images/eurostar/1.jpg" alt=""></a></div>
-
+            <div class="col-12 col-md-6 order-1 order-md-2 d-flex justify-content-center">
+                <img class="trainPositives-image" src="/Assets/Images/eurostar/1.jpg" alt=""></a> <!-- Изображение на положителните аспекти на влаковете -->
+            </div>
         </div>
     </section>
 
     <footer class="h-auto">
         <div class="container-xl">
             <div class="row d-flex align-items-center">
-                <div class="col-12 col-md-2"><img src="/logo-white.png" alt=""></a></div>
+                <div class="col-12 col-md-2"><img src="/logo-white.png" alt=""></a> <!-- Лого в долния колонтитул --></div>
                 <div class="col-12 col-md d-flex text-center justify-content-center align-items-center">
-                    <p data-lang-key="footerText"></p>
+                    <p data-lang-key="footerText"></p> <!-- Текст в долния колонтитул -->
                 </div>
                 <div class="col-12 col-md d-flex justify-content-center align-items-center">
-
-
                     <nav class="navbar justify-content-center w-100">
                         <ul>
                             <a href="/index.html">
-                                <li data-lang-key="home"></li>
+                                <li data-lang-key="home"></li> <!-- Линк към началната страница -->
                                 <p><ion-icon name="home-outline"></ion-icon></p>
                             </a>
                             <a href="/trains.html">
-                                <li data-lang-key="trains"></li>
+                                <li data-lang-key="trains"></li> <!-- Линк към страницата с влакове -->
                                 <p><ion-icon name="train-outline"></ion-icon></p>
                             </a>
                             <a href="/AboutUs.html">
-                                <li data-lang-key="aboutUS"></li>
+                                <li data-lang-key="aboutUS"></li> <!-- Линк към страницата "За нас" -->
                                 <p><ion-icon name="information-outline"></ion-icon></p>
                             </a>
                             <a href="/Contacts.html">
-                                <li data-lang-key="contacts"></li>
+                                <li data-lang-key="contacts"></li> <!-- Линк към страницата с контакти -->
                                 <p><ion-icon name="send-outline"></ion-icon></p>
                             </a>
                         </ul>
@@ -263,24 +233,20 @@
             </div>
             <div class="d-flex justify-content-center">
                 <button class="text-center mb-2 btn-tag btn-footer bg-none" data-lang-key="allRightsReserved">
-                </button>
+                </button> <!-- Бутон за запазени права -->
             </div>
         </div>
-
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ disable: 'mobile' }); // Инициализира AOS с деактивиране на мобилни устройства
     </script>
-    <script src="/main.js"></script>
-
+    <script src="/main.js"></script> <!-- Връзка към основния JavaScript файл -->
 </body>
 
 </html>
