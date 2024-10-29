@@ -1,572 +1,587 @@
+* {
+    font-family: Montserrat;
+}
 #topBar {
-    background-color: #336633;
-    color: white;
-    text-align: center;
+    background-color: #336633; /* Задава фон на горната лента */
+    color: white; /* Задава цвят на текста в горната лента */
+    text-align: center; /* Центрира текста в горната лента */
 }
 
 #topBar p {
-    width: 100%;
-    height: auto;
-    padding: 12px;
-    font-size: 14.2px;
-    align-items: center;
+    width: 100%; /* Задава ширина на параграфа на 100% */
+    height: auto; /* Автоматична височина на параграфа */
+    padding: 12px; /* Добавя отстъп от 12px около параграфа */
+    font-size: 14.2px; /* Задава размер на шрифта на параграфа */
+    align-items: center; /* Центрира елементите по вертикала */
 }
 
 .header-logo {
-    max-width: 130%;
-    justify-content: center;
+    max-width: 130%; /* Максимална ширина на логото */
+    justify-content: center; /* Центрира логото в контейнера */
 }
 
 .navbar li {
-    list-style: none;
-    padding: 0 2vb;
+    list-style: none; /* Премахва маркерите от списъка */
+    padding: 0 2vb; /* Добавя отстъп от 2vb около елементите на списъка */
 }
 
 .navbar ul {
-    display: flex;
-    padding: 0px;
+    display: flex; /* Задава флекс контейнер за навигационното меню */
+    padding: 0px; /* Премахва отстъпа от навигационното меню */
 }
 
 .navbar a {
-    text-align: center;
+    text-align: center; /* Центрира текста в линковете на навигацията */
 }
 
 .navbar ion-icon {
-    font-size: 28px;
-    margin: 5px 0 0 0;
+    font-size: 28px; /* Задава размер на иконите в навигацията */
+    margin: 5px 0 0 0; /* Добавя отстъп от 5px отгоре на иконите */
 }
 
 .socialButtons {
-    list-style: none;
-    display: flex;
+    list-style: none; /* Премахва маркерите от списъка с социални бутони */
+    display: flex; /* Задава флекс контейнер за социалните бутони */
 }
 
 .socialButtons li {
-    padding: 0 25px 0 0;
+    padding: 0 25px 0 0; /* Добавя отстъп от 25px вдясно на елементите на списъка */
 }
 
 .socialButtons ion-icon {
-    font-size: 25px;
-    margin: 10px 0 0 0;
+    font-size: 25px; /* Задава размер на иконите в социалните бутони */
+    margin: 10px 0 0 0; /* Добавя отстъп от 10px отгоре на иконите */
 }
 
 .socialButtons p {
-    text-align: end;
+    text-align: end; /* Подравнява текста в социалните бутони в края */
 }
 
 header a,
 a {
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
+    color: black; /* Задава черен цвят на линковете */
+    text-decoration: none; /* Премахва подчертаването на линковете */
+    text-transform: uppercase; /* Преобразува текста в главни букви */
 }
 
 .index_sectionOne {
-    margin-left: 0px;
-    padding-left: 120px;
-    padding-right: 120px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    margin-left: 0px; /* Задава ляв отстъп на 0px */
+    padding-left: 120px; /* Добавя отстъп от 120px отляво */
+    padding-right: 120px; /* Добавя отстъп от 120px отдясно */
+    width: 100%; /* Задава ширина на секцията на 100% */
+    background-size: cover; /* Задава фона да покрива целия контейнер */
+    background-position: center; /* Центрира фона */
+    background-repeat: no-repeat; /* Премахва повторението на фона */
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(hp-bannerimg.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(hp-bannerimg.png); /* Задава фоново изображение с градиент */
 }
 
 .l-button {
-    font-weight: 700;
-    font-size: 34px;
-    height: 141px;
-    width: 623px;
-    background-color: rgba(0, 147, 0, 0.53);
-    color: white;
+    font-weight: 700; /* Задава дебелина на шрифта на бутона */
+    font-size: 34px; /* Задава размер на шрифта на бутона */
+    height: 141px; /* Задава височина на бутона */
+    width: 623px; /* Задава ширина на бутона */
+    background-color: rgba(0, 147, 0, 0.53); /* Задава фонов цвят на бутона с прозрачност */
+    color: white; /* Задава бял цвят на текста на бутона */
 }
 
-
+/* Анимация за цветова ротация */
 .rainbow {
-    text-align: center;
-    padding: 10px 0;
-    animation: colorRotate 5s linear 0s infinite;
+    text-align: center; /* Центрира текста */
+    padding: 10px 0; /* Добавя отстъп от 10px отгоре и отдолу */
+    animation: colorRotate 5s linear 0s infinite; /* Задава анимация за цветова ротация */
 }
 
 @keyframes colorRotate {
     from {
-        color: #6666ff;
+        color: #6666ff; /* Начален цвят на анимацията */
     }
 
     10% {
-        color: #0099ff;
+        color: #0099ff; /* Цвят на 10% от анимацията */
     }
 
     50% {
-        color: #00b000;
+        color: #00b000; /* Цвят на 50% от анимацията */
     }
 
     75% {
-        color: #ff3399;
+        color: #ff3399; /* Цвят на 75% от анимацията */
     }
 
     100% {
-        color: #6666ff;
+        color: #6666ff; /* Краен цвят на анимацията */
     }
 }
 
 .selection-img {
-    width: 60%;
-    object-fit: cover;
+    width: 60%; /* Задава ширина на изображението на 60% */
+    object-fit: cover; /* Задава изображението да покрива контейнера */
 }
 
 .carousel {
-    width: 100%;
-    text-align: start;
+    width: 100%; /* Задава ширина на карусела на 100% */
+    text-align: start; /* Подравнява текста в началото */
 }
 
 .carousel .img {
-    width: 100%;
-    height: 500px;
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0px 20px 35px -30px rgba(0, 0, 0, 0.26);
+    width: 100%; /* Задава ширина на изображението в карусела на 100% */
+    height: 500px; /* Задава височина на изображението в карусела */
+    position: relative; /* Задава относителна позиция на изображението */
+    border-radius: 15px; /* Задава закръглени ъгли на изображението */
+    overflow: hidden; /* Скрива излишното съдържание извън контейнера */
+    box-shadow: 0px 20px 35px -30px rgba(0, 0, 0, 0.26); /* Добавя сянка на изображението */
 }
 
 .carousel .text {
-    padding: 35px;
-    padding-bottom: 20px;
-    padding-top: 0;
+    padding: 35px; /* Добавя отстъп от 35px около текста в карусела */
+    padding-bottom: 20px; /* Добавя отстъп от 20px отдолу на текста */
+    padding-top: 0; /* Няма отстъп отгоре на текста */
 }
 
 .carousel .text h3 {
-    font-size: 34px;
-    font-weight: 400;
-    margin-bottom: 0;
+    font-size: 34px; /* Задава размер на шрифта на заглавието */
+    font-weight: 400; /* Задава дебелина на шрифта на заглавието */
+    margin-bottom: 0; /* Няма отстъп отдолу на заглавието */
 }
 
 .carousel .text h3 a {
-    color: #fff;
+    color: #fff; /* Задава бял цвят на линковете в заглавието */
 }
 
 .carousel .text .cat {
-    font-size: 12px;
-    color: #b063c5;
-    font-weight: 400;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 1px 8px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
+    font-size: 12px; /* Задава размер на шрифта на категорията */
+    color: #b063c5; /* Задава цвят на текста на категорията */
+    font-weight: 400; /* Задава дебелина на шрифта на категорията */
+    background: rgba(255, 255, 255, 0.9); /* Задава фон на категорията с прозрачност */
+    padding: 1px 8px; /* Добавя отстъп около категорията */
+    text-transform: uppercase; /* Преобразува текста в главни букви */
+    margin-bottom: 5px; /* Добавя отстъп отдолу на категорията */
 }
 
 /* .carousel:hover {
-    transition: transform .5s;
-} */
+    transition: transform .5s; /* Анимация при задържане на курсора над карусела } */
 
 /* .carousel:hover {
     p {
-        display: block !important;
-        transition: opacity 0.5s ease-in-out;
-        opacity: 1;
-    }
-
-
+        display: block !important; /* Показва параграфа при задържане на курсора 
+        transition: opacity 0.5s ease-in-out; /* Анимация за плавно показване на параграфа
+        opacity: 1; /* Задава видимост на параграфа }
 } */
+
 div.carousel:hover p.shortDescription {
-    opacity: 1;
-    max-height: fit-content;
-    transition: opacity 0.2s ease-in;
+    opacity: 1; /* Задава видимост на краткото описание при задържане на курсора */
+    max-height: fit-content; /* Задава максимална височина на краткото описание */
+    transition: opacity 0.2s ease-in; /* Анимация за плавно показване на краткото описание */
 }
 
 div.carousel {
-    transition: transform 0.3s;
+    transition: transform 0.3s; /* Анимация при трансформация на карусела */
 }
 
 div.carousel:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s;
-
+    transform: scale(1.05); /* Увеличава карусела при задържане на курсора */
+    transition: transform 0.3s; /* Анимация за плавно увеличаване на карусела */
 }
 
 .carousel p.shortDescription {
-    color: white !important;
-    padding: 5px 0;
-    opacity: 0;
-    /* visibility: hidden; */
-    max-height: 0;
-
+    color: white !important; /* Задава бял цвят на краткото описание */
+    padding: 5px 0; /* Добавя отстъп от 5px отгоре и отдолу на краткото описание */
+    opacity: 0; /* Няма видимост на краткото описание по подразбиране */
+    /* visibility: hidden; */ /* Премахва видимостта на краткото описание */
+    max-height: 0; /* Задава максимална височина на краткото описание на 0 */
 }
 
 .carousel a {
-    text-decoration: none;
-    font-weight: bold;
+    text-decoration: none; /* Премахва подчертаването на линковете в карусела */
+    font-weight: bold; /* Задава дебелина на шрифта на линковете в карусела */
 }
 
 .btn-seeMore {
-    text-align: end;
-    width: 100%;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
+    text-align: end; /* Подравнява текста в края на бутона "Виж повече" */
+    width: 100%; /* Задава ширина на бутона на 100% */
+    color: white; /* Задава бял цвят на текста на бутона */
+    font-weight: bold; /* Задава дебелина на шрифта на бутона */
+    text-transform: uppercase; /* Преобразува текста в главни букви */
 }
 
 .btn-seeMore ion-icon {
-    font-size: 30px;
+    font-size: 30px; /* Задава размер на иконите в бутона "Виж повече" */
 }
 
 .trainOne div.img {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/Shinkansen.png);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/Shinkansen.png); /* Задава фоново изображение за първия влак */
 }
 
 .trainTwo div.img {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TGVDuplex.png);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TGVDuplex.png); /* Задава фоново изображение за втория влак */
 }
 
 .trainThree div.img {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/ICEFour.png);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/ICEFour.png); /* Задава фоново изображение за третия влак */
 }
 
 .trainFour div.img {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainFour.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainFour.jpg); /* Задава фоново изображение за четвъртия влак */
 }
 
 .trainFive div.img {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainFive.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainFive.jpg); /* Задава фоново изображение за петия влак */
 }
 
 .trainSix div.img {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainSix.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainSix.jpg); /* Задава фоново изображение за шестия влак */
 }
 
 .trainSeven div.img {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainSeven.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainSeven.jpg); /* Задава фоново изображение за седмия влак */
 }
 
 .trainEight div.img {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainEight.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainEight.jpg); /* Задава фоново изображение за осмия влак */
 }
 
 .trainNine div.img {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainNine.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.445)), url(Assets/Images/TrainNine.jpg); /* Задава фоново изображение за деветия влак */
 }
 
 div.carousel div.img {
-    background-size: 100% 100%;
-    object-fit: cover;
+    background-size: 100% 100%; /* Задава фона на изображението да покрива контейнера */
+    object-fit: cover; /* Задава изображението да покрива контейнера */
 }
 
 .section-SeeMore a {
-    padding: 10px 20px;
-    border-radius: 30px;
-    color: white;
-    font-weight: bolder;
-    text-decoration: none;
-    animation: colorRotateForButtonBackground 3s linear 0s infinite;
+    padding: 10px 20px; /* Добавя отстъп около линка "Виж повече" */
+    border-radius: 30px; /* Закръгля ъглите на линка "Виж повече" */
+    color: white; /* Задава бял цвят на текста на линка "Виж повече" */
+    font-weight: bolder; /* Задава по-дебел шрифт на линка "Виж повече" */
+    text-decoration: none; /* Премахва подчертаването на линка "Виж повече" */
+    animation: colorRotateForButtonBackground 3s linear 0s infinite; /* Задава анимация за фоновия цвят на бутона "Виж повече" */
 }
 
 @keyframes colorRotateForButtonBackground {
     from {
-        background-color: #6666ff;
+        background-color: #6666ff; /* Начален цвят на фона на бутона */
     }
 
     10% {
-        background-color: #0099ff;
+        background-color: #0099ff; /* Цвят на 10% от анимацията */
     }
 
     50% {
-        background-color: #00b000;
+        background-color: #00b000; /* Цвят на 50% от анимацията */
     }
 
     75% {
-        background-color: #ff3399;
+        background-color: #ff3399; /* Цвят на 75% от анимацията */
     }
 
     100% {
-        background-color: #6666ff;
+        background-color: #6666ff; /* Краен цвят на фона на бутона */
     }
 }
 
-.btn-tag {
-    width: auto;
-    height: auto;
-    padding: 5px 7px;
-    border: 2px solid #4c3663;
-    background-color: white;
-    color: #4c3663;
-    font-size: 14px;
-    border-radius: 10px;
+.btn-tag, select {
+    width: auto; /* Автоматична ширина на бутона */
+    height: auto; /* Автоматична височина на бутона */
+    padding: 5px 7px; /* Добавя отстъп около бутона */
+    border: 2px solid #4c3663; /* Задава рамка на бутона */
+    background-color: white; /* Задава бял фон на бутона */
+    color: #4c3663; /* Задава цвят на текста на бутона */
+    font-size: 14px; /* Задава размер на шрифта на бутона */
+    border-radius: 10px; /* Закръгля ъглите на бутона */
 }
 
 .trainPositives {
-    list-style: none;
-
+    list-style: none; /* Премахва маркерите от списъка с положителни аспекти на влака */
 }
 
 .trainPositives ion-icon {
-    font-size: 25px;
+    font-size: 25px; /* Задава размер на иконите в положителните аспекти на влака */
 }
 
 .trainPositives-title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
+    display: flex; /* Задава флекс контейнер за заглавието на положителните аспекти */
+    align-items: center; /* Центрира елементите по вертикала */
+    margin-bottom: 5px; /* Добавя отстъп отдолу на заглавието */
 }
 
 .trainPositivesPoint:hover .trainPositives-description {
-    opacity: 1;
-    max-height: fit-content;
-    transition: all 1s;
+    opacity: 1; /* Задава видимост на описанието при задържане на курсора */
+    max-height: fit-content; /* Задава максимална височина на описанието */
+    transition: all 1s; /* Анимация за плавно показване на описанието */
 }
 
 .trainPositives-description {
-    padding-left: 35px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    opacity: 0;
-    max-height: 0;
+    padding-left: 35px; /* Добавя отстъп от 35px отляво на описанието */
+    margin-bottom: 0; /* Няма отстъп отдолу на описанието */
+    padding-bottom: 0; /* Няма отстъп отдолу на описанието */
+    opacity: 0; /* Няма видимост на описанието по подразбиране */
+    max-height: 0; /* Задава максимална височина на описанието на 0 */
 }
 
 footer {
-    height: 20vh;
+    height: 20vh; /* Задава височина на футера на 20% от височината на изгледа */
 }
 
 footer * {
-    max-height: 100%;
+    max-height: 100%; /* Задава максимална височина на всички елементи в футера */
 }
 
 footer img {
-    max-width: 100%;
+    max-width: 100%; /* Задава максимална ширина на изображенията в футера */
 }
 
 nav li {
-    opacity: 0;
-    transition: all 0.5s ease-in;
+    opacity: 0; /* Няма видимост на елементите в навигацията по подразбиране */
+    transition: all 0.5s ease-in; /* Анимация за плавно показване на елементите в навигацията */
 }
 
 nav a:hover li {
-    opacity: 1;
+    opacity: 1; /* Задава видимост на елементите в навигацията при задържане на курсора */
 }
 
-.btn-footer {
-    animation: colorRotateForFooter 2s linear 0s infinite;
+.btn-footer, select {
+    animation: colorRotateForFooter 2s linear 0s infinite; /* Задава анимация за фоновия цвят на бутона в футера */
 }
 
 @keyframes colorRotateForFooter {
     from {
-        border-color: #6666ff;
-        color: #6666ff;
+        border-color: #6666ff; /* Начален цвят на рамката на бутона в футера */
+        color: #6666ff; /* Начален цвят на текста на бутона в футера */
     }
 
     10% {
-        border-color: #0099ff;
-        color: #0099ff;
+        border-color: #0099ff; /* Цвят на рамката на бутона в футера на 10% от анимацията */
+        color: #0099ff; /* Цвят на текста на бутона в футера на 10% от анимацията */
     }
 
     50% {
-        border-color: #00b000;
-        color: #00b000;
+        border-color: #00b000; /* Цвят на рамката на бутона в футера на 50% от анимацията */
+        color: #00b000; /* Цвят на текста на бутона в футера на 50% от анимацията */
     }
 
     75% {
-        border-color: #ff3399;
-        color: #ff3399;
+        border-color: #ff3399; /* Цвят на рамката на бутона в футера на 75% от анимацията */
+        color: #ff3399; /* Цвят на текста на бутона в футера на 75% от анимацията */
     }
 
     100% {
-        border-color: #6666ff;
-        color: #6666ff;
+        border-color: #6666ff; /* Краен цвят на рамката на бутона в футера */
+        color: #6666ff; /* Краен цвят на текста на бутона в футера */
     }
 }
 
 .border-customized {
-    border-radius: 10px;
-    border: 1px solid #dee2e6;
+    border-radius: 10px; /* Закръгля ъглите на рамката */
+    border: 1px solid #dee2e6; /* Задава рамка на елемента */
 }
 
 .train-bgFix {
-    background-size: cover !important;
-    background-position-y: center;
+    background-size: cover !important; /* Задава фона да покрива контейнера с важност */
+    background-position-y: center; /* Центрира фона по вертикала */
 }
 
 .lg-bg-drive-type {
-    background: linear-gradient(135deg, #0A2A36, #56C1D0);
-    color: #fff;
-    border: none;
+    background: linear-gradient(135deg, #0A2A36, #56C1D0); /* Задава градиентен фон за типа на задвижване */
+    color: #fff; /* Задава бял цвят на текста */
+    border: none; /* Премахва рамката */
 }
 
 .lg-bg-power {
-    background: linear-gradient(135deg, #4B0039, #FF6B9A);
-    color: #fff;
-    border: none;
+    background: linear-gradient(135deg, #4B0039, #FF6B9A); /* Задава градиентен фон за мощността */
+    color: #fff; /* Задава бял цвят на текста */
+    border: none; /* Премахва рамката */
 }
 
 .lg-bg-max-speed {
-    background: linear-gradient(135deg, #1E4057, #5ED1FF);
-    color: #fff;
-    border: none;
+    background: linear-gradient(135deg, #1E4057, #5ED1FF); /* Задава градиентен фон за максималната скорост */
+    color: #fff; /* Задава бял цвят на текста */
+    border: none; /* Премахва рамката */
 }
 
 .lg-bg-length {
-    background: linear-gradient(135deg, #2B3D34, #6CFFA3);
-    color: #fff;
-    border: none;
-
+    background: linear-gradient(135deg, #2B3D34, #6CFFA3); /* Задава градиентен фон за дължината */
+    color: #fff; /* Задава бял цвят на текста */
+    border: none; /* Премахва рамката */
 }
 
 .lg-bg-track-width {
-    background: linear-gradient(135deg, #1B4C47, #77E6D4);
-    color: #fff;
-    border: none;
+    background: linear-gradient(135deg, #1B4C47, #77E6D4); /* Задава градиентен фон за ширината на релсите */
+    color: #fff; /* Задава бял цвят на текста */
+    border: none; /* Премахва рамката */
 }
 
 .lg-bg-car-count {
-    background: linear-gradient(135deg, #3C1A4F, #A275FF);
-    color: #fff;
-    border: none;
+    background: linear-gradient(135deg, #3C1A4F, #A275FF); /* Задава градиентен фон за броя на вагоните */
+    color: #fff; /* Задава бял цвят на текста */
+    border: none; /* Премахва рамката */
 }
 
 .lg-bg-weight {
-    background: linear-gradient(135deg, #263946, #5EB8A3);
-    color: #fff;
-    border: none;
+    background: linear-gradient(135deg, #263946, #5EB8A3); /* Задава градиентен фон за теглото */
+    color: #fff; /* Задава бял цвят на текста */
+    border: none; /* Премахва рамката */
 }
 
 .lg-bg-capacity {
-    background: linear-gradient(135deg, #1F3A47, #56E6C7);
-    color: #fff;
-    border: none;
+    background: linear-gradient(135deg, #1F3A47, #56E6C7); /* Задава градиентен фон за капацитета */
+    color: #fff; /* Задава бял цвят на текста */
+    border: none; /* Премахва рамката */
 }
 
 .lg-bg-safety-systems {
-    background: linear-gradient(135deg, #293D5C, #7ACBFF);
-    color: #fff;
-    border: none;
+    background: linear-gradient(135deg, #293D5C, #7ACBFF); /* Задава градиентен фон за системите за безопасност */
+    color: #fff; /* Задава бял цвят на текста */
+    border: none; /* Премахва рамката */
 }
 
 .lg-bg-comfort-systems {
-    background: linear-gradient(135deg, #3E1A34, #FF73B6);
-    color: #fff;
-    border: none;
+    background: linear-gradient(135deg, #3E1A34, #FF73B6); /* Задава градиентен фон за системите за комфорт */
+    color: #fff; /* Задава бял цвят на текста */
+    border: none; /* Премахва рамката */
 }
 
 .lg-bg-acceleration {
-    background: linear-gradient(135deg, #0D3A42, #4FD7DF);
-    color: #fff;
-    border: none;
+    background: linear-gradient(135deg, #0D3A42, #4FD7DF); /* Задава градиентен фон за ускорението */
+    color: #fff; /* Задава бял цвят на текста */
+    border: none; /* Премахва рамката */
 }
 
 .lg-bg-braking-distance {
-    background: linear-gradient(135deg, #1F4A58, #72E1FF);
-    color: #fff;
-    border: none;
+    background: linear-gradient(135deg, #1F4A58, #72E1FF); /* Задава градиентен фон за спирачната дистанция */
+    color: #fff; /* Задава бял цвят на текста */
+    border: none; /* Премахва рамката */
 }
 
 .lg-bg-service-frequency {
-    background: linear-gradient(135deg, #2B5145, #71FFA7);
-    color: #fff;
-    border: none;
+    background: linear-gradient(135deg, #2B5145, #71FFA7); /* Задава градиентен фон за честотата на обслужване */
+    color: #fff; /* Задава бял цвят на текста */
+    border: none; /* Премахва рамката */
 }
 
 .lg-bg-year-of-manufacture {
-    background: linear-gradient(135deg, #4A2E3A, #FF7399);
-    color: #fff;
-    border: none;
+    background: linear-gradient(135deg, #4A2E3A, #FF7399); /* Задава градиентен фон за годината на производство */
+    color: #fff; /* Задава бял цвят на текста */
+    border: none; /* Премахва рамката */
 }
 
 .product_sidebar-border {
-    border-radius: 10px;
-    border: 1px solid #cbbeda;
+    border-radius: 10px; /* Закръгля ъглите на рамката на страничната лента */
+    border: 1px solid #cbbeda; /* Задава рамка на страничната лента */
 }
 
 .product_title {
-    font-size: calc(12px + (6 * 0.3vmin));
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: calc(12px + (6 * 0.3vmin)); /* Задава размер на шрифта на заглавието на продукта */
+    font-weight: 700; /* Задава дебелина на шрифта на заглавието на продукта */
+    line-height: 1.5; /* Задава междуредие на заглавието на продукта */
 }
 
 .product_brand {
-    line-height: 1.5;
-    border-bottom: 1px solid #654884;
-    font-weight: 400;
-    text-decoration: none;
-    font-size: 12px;
+    line-height: 1.5; /* Задава междуредие на марката на продукта */
+    border-bottom: 1px solid #654884; /* Задава долна рамка на марката на продукта */
+    font-weight: 400; /* Задава дебелина на шрифта на марката на продукта */
+    text-decoration: none; /* Премахва подчертаването на марката на продукта */
+    font-size: 12px; /* Задава размер на шрифта на марката на продукта */
 }
 
 .card-title {
-    font-weight: bold;
+    font-weight: bold; /* Задава дебелина на шрифта на заглавието на картата */
 }
 
 .progress {
-    display: none;
-
+    display: none; /* Скрива прогреса */
 }
 
 div#product col,
 .card {
-    height: 100% !important;
+    height: 100% !important; /* Задава височина на продукта и картата на 100% с важност */
 }
 
 .specifications {
-    height: 100%;
+    height: 100%; /* Задава височина на спецификациите на 100% */
 }
 
 .nowrap {
-    white-space: nowrap;
-    font-size: 14px;
-    font-size: 3.4vw;
+    white-space: nowrap; /* Премахва пренасянето на текста на нов ред */
+    font-size: 14px; /* Задава размер на шрифта */
+    font-size: 3.4vw; /* Задава размер на шрифта в зависимост от ширината на изгледа */
 }
 
 .carousel {
-    position: relative;
-    margin: auto;
-    overflow: hidden;
+    position: relative; /* Задава относителна позиция на карусела */
+    margin: auto; /* Центрира карусела */
+    overflow: hidden; /* Скрива излишното съдържание извън карусела */
 }
 
 .carousel-slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+    display: flex; /* Задава флекс контейнер за слайдовете на карусела */
+    transition: transform 0.5s ease-in-out; /* Анимация за плавно преместване на слайдовете */
 }
 
 .slide {
-    min-width: 100%;
-    transition: opacity 0.5s ease;
+    min-width: 100%; /* Минимална ширина на слайда на 100% */
+    transition: opacity 0.5s ease; /* Анимация за плавно показване на слайда */
 }
 
 .slide img {
-    max-width: 75%;
-    display: block;
-    margin: auto;
+    max-width: 75%; /* Максимална ширина на изображението в слайда */
+    display: block; /* Показва изображението като блоков елемент */
+    margin: auto; /* Центрира изображението */
 }
 
 .carousel-dots {
-    text-align: center;
-    padding: 10px;
+    text-align: center; /* Центрира точките под карусела */
+    padding: 10px; /* Добавя отстъп около точките */
 }
 
 .dot {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    display: inline-block; /* Показва точките като инлайн блокови елементи */
+    width: 12px; /* Задава ширина на точките */
+    height: 12px; /* Задава височина на точките */
+    margin: 0 5px; /* Добавя отстъп между точките */
+    background-color: #bbb; /* Задава сив цвят на точките */
+    border-radius: 50%; /* Закръгля точките */
+    cursor: pointer; /* Задава курсора на ръка при задържане на курсора над точките */
+    transition: background-color 0.3s; /* Анимация за плавна промяна на цвета на точките */
 }
 
 .dot.active,
 .dot:hover {
-    background-color: #333;
+    background-color: #333; /* Задава тъмен цвят на активната точка или при задържане на курсора */
 }
 
 .trainPositives-image {
-    max-width: 75%;
+    max-width: 75%; /* Максимална ширина на изображението на положителните аспекти на влака */
+    object-fit: cover;
 }
 
 .spamLinkFix {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    position: absolute; /* Задава абсолютна позиция на елемента */
+    width: 100%; /* Задава ширина на 100% */
+    height: 100%; /* Задава височина на 100% */
+    top: 0; /* Позиционира елемента в горната част */
+    left: 0; /* Позиционира елемента в лявата част */
 }
+
 .btn-productSpecifications {
-    margin: 30px 0;
+    margin: 30px 0; /* Добавя отстъп от 30px отгоре и отдолу на бутона за спецификации на продукта */
+}
+footer * {
+    color: white;
+}
+footer {
+    background-color: black;
+}
+.bg-none {
+    background-color: transparent;
+}
+.page-category-navigator {
+    font-family: Montserrat;
+    background-color: #d0fbdd;
+    font-size: calc(12px + (1 * 0.3vmin));
+    font-weight: 400;
+    line-height: 1.5;
+    color: #288b2f;
+    border-bottom: 1px solid #bec2da;
 }
