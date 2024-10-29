@@ -2,7 +2,7 @@
 <br/>
 <div align="center">
 <a href="https://github.com/ShaanCoding/ReadME-Generator">
-<img src="https://github.com/dicheto/Dicheto-IT/blob/b852b24e9515a65f37a7386b596b84a0748bd65a/logo.png" alt="Logo" width="80" height="80">
+<img src="https://github.com/dicheto/Dicheto-IT/blob/b852b24e9515a65f37a7386b596b84a0748bd65a/logo.png" alt="Logo" >
 </a>
 <h3 align="center">БДВС | BDVS</h3>
 <p align="center">
